@@ -7,10 +7,12 @@ os.system("cls")
 
 N = int(input('N = '))
 
-A = []
+# A = []
 
-for i in range(N):
-    A.append(int(input()))
+# for i in range(N):
+#     A.append(int(input()))
+
+A = [int(input()) for i in range(N)]
 
 X = int(input('X = '))
 
