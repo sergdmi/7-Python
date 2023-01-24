@@ -1,11 +1,5 @@
-import os
-os.system("cls")
+list1 = [int(i) for i in input().split()]
 
-list1 = [int(input()) for i in range(int(input()))]
+list2 = [ (i, i*i) for i  in list1 if i % 2 == 0]
 
-count = 0
-for i in range(1, len(list1)-1):
-    if list1[i-1] < list1[i] > list1[i+1]:
-        count +=1
-
-print(count)
+print(list2)
